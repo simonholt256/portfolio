@@ -1,3 +1,5 @@
+import NavBar from "./NavBar"
+
 function Header() {
   return (
     <div className='Header'>
@@ -14,7 +16,9 @@ function Header() {
             </div>
           </div>
           <div className='Header__grid-split-right'>
-            <div className='Header__grid-split-right-white'></div>
+            <div className='Header__grid-split-right-white'>
+              <NavBar/>
+            </div>
           </div>
         </div>
       </div>
