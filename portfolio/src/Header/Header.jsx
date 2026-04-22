@@ -1,3 +1,4 @@
+import TimeBar from "./TimeBar"
 import NavBar from "./NavBar"
 
 function Header() {
@@ -17,6 +18,7 @@ function Header() {
           </div>
           <div className='Header__grid-split-right'>
             <div className='Header__grid-split-right-white'>
+              <TimeBar/>
               <NavBar/>
             </div>
           </div>

@@ -1,11 +1,81 @@
+
+import ChromePic from "../assets/chromeboxfargreengimp.png"
+import Guy from "../assets/guy.png"
+import CommunicationIcon from "../assets/icons/communication.png"
+
 function Home() {
   return (
     <>
-      <div className='tech-divider'></div>
-      <div className='chrome-box-outer'>
-        <div className='chrome-box-inner'></div>
+      <div className='tech-divider-home'>
+        Tech Used: HTML - CSS - JavaScript - React js - Node - Npm -
       </div>
-      <div className='orange-divider'></div>
+      <div className='chrome-box-outer intro-box'>
+        <div className='chrome-box-inner'>
+          Hello, I’m Simon. I’m a self taught full-stack software developer looking
+          for an opportunity to start my career in the field.
+          <br></br>
+          <br></br>
+          Having an understanding of all the working parts that create a fully
+          functioning application means that whichever area I am focusing my attention
+          on, I will always keep in mind the big pictures and how that specific element
+          will interact with those around it.
+        </div>
+      </div>
+      
+      <div className='orange-divider-home'>
+        <img className="guy-pic" src={Guy}/>
+      </div>
+      <div className="key-principles-text">
+        There are a few key principles I think are vital for a project to reach its best form. Communication. Maintainability. Creativity
+      </div>
+      <div className="chrome-box-outer communication-box">
+        <div className="chrome-box-inner">
+          <h3>Communication</h3>
+          <div className="communication-box__text-icon-split">
+            <p>
+              Communication amongst the team and communication with a client. In a work
+              environment with many moving parts, knowing what one's role is, what others
+              are working on, and knowing exactly what is desired is invaluable. Everywhere
+              I have worked, communication, or the lack of it, was the thing that could make
+              or break an initiative. 
+            </p>
+            <img className="comm-icon" src={CommunicationIcon}></img>
+          </div>
+          
+        </div>
+      </div>
+      <div className="blue-divider-home"></div>
+      <div className="chrome-box-outer maintain-box">
+        <div className="chrome-box-inner">
+          <h3>Maintainability</h3>
+          <div className="maintain-box__text-icon-split">
+            <p>
+              Readable code that is understood at a glance, helps work done today and in the future.
+              Conscious and deliberate decisions about system architecture allow for potential scaling
+              and reduce headaches when changes inevitably have to be made. Clear and precise notes are
+              a must. Be kind to your future self (or those who come after you). 
+            </p>
+            <img className="comm-icon" src={CommunicationIcon}></img>
+          </div>
+          
+        </div>
+      </div>
+      <div className="yellow-divider-home"></div>
+      <div className="chrome-box-outer creative-box">
+        <div className="chrome-box-inner">
+          <h3>Creativity</h3>
+          <div className="creative-box__text-icon-split">
+            <p>
+              Creative thinking creates solutions. Whether that happens through tailoring an algorithm to
+              sort data in the most efficient way, or through finding a new design style that captures a user's
+              imagination in a unique way. It is creativity and the passion it fuels that gets good work done.
+              Used well, creativity is what shifts the ordinary from the mundane to the spectacular.
+            </p>
+            <img className="comm-icon" src={CommunicationIcon}></img>
+          </div>
+          
+        </div>
+      </div>
     </>
   )
 }

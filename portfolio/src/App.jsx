@@ -13,6 +13,7 @@ import Principles from "./Pages/ProjectPages/Principles"
 
 import ChromeBox from './assets/chromeboxfargreengimp.png'
 import Header from './Header/Header'
+import Footer from "./components/Footer";
 
 import './App.css'
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/work/eatthefrog" element={<EatTheFrog />} />
           <Route path="/work/principles" element={<Principles />} />
         </Routes>
+        <Footer/>
       </Router>
       {/* <img className='chrome-box' src={ChromeBox}/> */}
     </>
