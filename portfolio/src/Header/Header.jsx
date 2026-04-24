@@ -4,7 +4,7 @@ import NavBar from "./NavBar"
 function Header() {
   return (
     <div className='Header'>
-        <div className='Header__blue-bar'></div>
+        {/* <div className='Header__blue-bar'></div> */}
         <div className='Header__grid-split'>
           <div className='Header__grid-split-left'>
             <div className='Header__grid-split-left__top'>
@@ -23,6 +23,7 @@ function Header() {
             </div>
           </div>
         </div>
+        
       </div>
   )
     

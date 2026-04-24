@@ -7,9 +7,12 @@
 
 body {
   margin: auto;
-  width: 86%;
+  width: 92%;
   max-width: 1200px;
+  max-width: 1400px;
   background-color: #C4D4C4;
+  background-color: #daecda;
+  /* background-image: url("./assets/dot-grid-green.png"); */
   box-shadow: 0px 0px 10px #3b3b3b8a;
   display: flex;
   flex-direction: column;

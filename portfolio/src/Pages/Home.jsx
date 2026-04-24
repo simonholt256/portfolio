@@ -3,11 +3,19 @@ import ChromePic from "../assets/chromeboxfargreengimp.png"
 import Guy from "../assets/guy.png"
 import CommunicationIcon from "../assets/icons/communication.png"
 
+import Chat from "../assets/icons/chat.png"
+import Idea from "../assets/icons/idea.png"
+import Setting from "../assets/icons/setting.png"
+
 function Home() {
   return (
     <>
+      <h1 className="home-title">Welcome</h1>
       <div className='tech-divider-home'>
-        Tech Used: HTML - CSS - JavaScript - React js - Node - Npm -
+        <div className="tech-divider-home__text">
+          Tech Used: HTML - CSS - JavaScript - React js - Node - Npm -
+        </div>
+        
       </div>
       <div className='chrome-box-outer intro-box'>
         <div className='chrome-box-inner'>
@@ -26,7 +34,7 @@ function Home() {
         <img className="guy-pic" src={Guy}/>
       </div>
       <div className="key-principles-text">
-        There are a few key principles I think are vital for a project to reach its best form. Communication. Maintainability. Creativity
+        There are a few key principles I think are vital for a project to reach its best form. Communication. Maintainability. Creativity.
       </div>
       <div className="chrome-box-outer communication-box">
         <div className="chrome-box-inner">
@@ -39,7 +47,7 @@ function Home() {
               I have worked, communication, or the lack of it, was the thing that could make
               or break an initiative. 
             </p>
-            <img className="comm-icon" src={CommunicationIcon}></img>
+            <img className="comm-icon" src={Chat}></img>
           </div>
           
         </div>
@@ -55,7 +63,7 @@ function Home() {
               and reduce headaches when changes inevitably have to be made. Clear and precise notes are
               a must. Be kind to your future self (or those who come after you). 
             </p>
-            <img className="comm-icon" src={CommunicationIcon}></img>
+            <img className="comm-icon" src={Setting}></img>
           </div>
           
         </div>
@@ -71,7 +79,7 @@ function Home() {
               imagination in a unique way. It is creativity and the passion it fuels that gets good work done.
               Used well, creativity is what shifts the ordinary from the mundane to the spectacular.
             </p>
-            <img className="comm-icon" src={CommunicationIcon}></img>
+            <img className="comm-icon" src={Idea}></img>
           </div>
           
         </div>

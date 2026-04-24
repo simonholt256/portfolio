@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom"
 
+import LinkedIn from "../assets/icons/linkedin.svg"
+import GitHub from "../assets/icons/github.svg"
+
 function Footer() {
   return (
     <footer className="footer">
@@ -32,8 +35,12 @@ function Footer() {
         <div>-------</div>
         <div>Email@email.com</div>
         <div className="footer__socials-box">
-          <div className="footer__social-link">Github</div>
-          <div className="footer__social-link">linkdIn</div>
+          <div className="footer__social-link">
+            <a href="https://github.com/simonholt256" target="_blank"><img src={GitHub}/></a>
+          </div>
+          <div className="footer__social-link">
+            <a href="https://www.linkedin.com/in/simon-holt-763282385/" target="_blank"><img src={LinkedIn}/></a>
+          </div>
         </div>
       </div>
     </footer>

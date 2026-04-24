@@ -1,3 +1,5 @@
+import ChromeHoop from "../assets/chromehoop.png"
+
 function Contact() {
   return (
     <>
@@ -16,6 +18,7 @@ function Contact() {
   
       </form>
       <div>Or reach out to me on GitHub or LinkdIn</div>
+      <img src={ChromeHoop} style={{height: "200px"}}></img>
       <div>
         <div></div>
         <div></div>

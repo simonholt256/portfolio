@@ -13,6 +13,7 @@ import Principles from "./Pages/ProjectPages/Principles"
 
 import ChromeBox from './assets/chromeboxfargreengimp.png'
 import Header from './Header/Header'
+import NavBar from "./Header/NavBar";
 import Footer from "./components/Footer";
 
 import './App.css'
@@ -23,7 +24,7 @@ function App() {
     <>
       
       <Router>
-        <Header/>
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
