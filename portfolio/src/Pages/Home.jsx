@@ -1,6 +1,6 @@
 
 import ChromePic from "../assets/chromeboxfargreengimp.png"
-import Guy from "../assets/guy.png"
+import Profilepic from "../assets/profilepicnobackground.png"
 import CommunicationIcon from "../assets/icons/communication.png"
 
 import Chat from "../assets/icons/chat.png"
@@ -11,9 +11,12 @@ function Home() {
   return (
     <>
       <h1 className="home-title">Welcome</h1>
+      <div className="pic-small-box">
+        <img className="profile-pic-small" src={Profilepic}/>
+      </div>
       <div className='tech-divider-home'>
         <div className="tech-divider-home__text">
-          Tech Used: HTML - CSS - JavaScript - React js - Node - Npm -
+          Tech Used: HTML - CSS - JavaScript - React js - Python
         </div>
         
       </div>
@@ -31,7 +34,7 @@ function Home() {
       </div>
       
       <div className='orange-divider-home'>
-        <img className="guy-pic" src={Guy}/>
+        <img className="guy-pic" src={Profilepic}/>
       </div>
       <div className="key-principles-text">
         There are a few key principles I think are vital for a project to reach its best form. Communication. Maintainability. Creativity.
