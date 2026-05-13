@@ -1,0 +1,34 @@
+:root {
+  --green: #daecdada;
+  --orange: #FFB56B;
+
+  --font-style: "Roboto Mono", monospace;
+
+  background-color: #ffeacf;
+  background-image: url("../assets/design/orangecircuttest.png");
+  background-position: top;
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-style);
+}
+
+body {
+  margin: auto;
+  width: 94%;
+  max-width: 1200px;
+  max-width: 1400px;
+  background-color: var(--green);
+  box-shadow: 0px 0px 10px #3b3b3b8a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+#root {
+  min-height: 100svh;
+}
+

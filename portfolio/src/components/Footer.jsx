@@ -1,7 +1,9 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
-import LinkedIn from "../assets/icons/linkedin.svg"
-import GitHub from "../assets/icons/github.svg"
+import LinkedIn from "../assets/icons/socials/linkedin.svg";
+import GitHub from "../assets/icons/socials/github.svg";
+
+import "../css/footer.css"
 
 function Footer() {
   return (

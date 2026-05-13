@@ -1,7 +1,6 @@
-import LinkedIn from "../assets/icons/linkedin.svg"
-import GitHub from "../assets/icons/github.svg"
+import LinkedIn from "../../assets/icons/socials/linkedin.svg";
+import GitHub from "../../assets/icons/socials/github.svg";
 
-import ChromeHoop from "../assets/chromehoop.png"
 
 
 function Contact() {

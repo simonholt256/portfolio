@@ -1,11 +1,11 @@
 
-import ChromePic from "../assets/chromeboxfargreengimp.png"
-import Profilepic from "../assets/profilepicnobackground.png"
-import CommunicationIcon from "../assets/icons/communication.png"
 
-import Chat from "../assets/icons/chat.png"
-import Idea from "../assets/icons/idea.png"
-import Setting from "../assets/icons/setting.png"
+import Profilepic from "../../assets/profile/profilepicnobackground.png"
+import CommunicationIcon from "../../assets/icons/indicators/communication.png"
+
+import Chat from "../../assets/icons/indicators/chat.png"
+import Idea from "../../assets/icons/indicators/idea.png"
+import Setting from "../../assets/icons/indicators/setting.png"
 
 function Home() {
   return (

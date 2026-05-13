@@ -1,21 +1,21 @@
 /* art images import */
 
-import Scratchcard from "../assets/paintings/scratchcard.jpg"
-import Josh from "../assets/paintings/josh.jpg"
-import House from "../assets/paintings/house.jpg"
-import Shrimp from "../assets/paintings/shrimp.jpg"
+import Scratchcard from "../../assets/art/paintings/scratchcard.jpg"
+import Josh from "../../assets/art/paintings/josh.jpg"
+import House from "../../assets/art/paintings/house.jpg"
+import Shrimp from "../../assets/art/paintings/shrimp.jpg"
 
 
 
 
 /* blender img import */
 
-import Brooch from "../assets/BlenderImages/brooch.png"
-import Satellite from "../assets/BlenderImages/Satellite.mp4"
-import Chair from "../assets/BlenderImages/Chair.jpg"
-import Rhino from "../assets/BlenderImages/rhino.png"
-import Bowling from "../assets/BlenderImages/bowling.mp4"
-import Sword from "../assets/BlenderImages/sword.mp4"
+import Brooch from "../../assets/art/blender/brooch.png"
+import Satellite from "../../assets/art/blender/Satellite.mp4"
+import Chair from "../../assets/art/blender/Chair.jpg"
+import Rhino from "../../assets/art/blender/rhino.png"
+import Bowling from "../../assets/art/blender/bowling.mp4"
+import Sword from "../../assets/art/blender/sword.mp4"
 
 function About() {
   return (

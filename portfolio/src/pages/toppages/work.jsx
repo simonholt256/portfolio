@@ -2,24 +2,25 @@ import { NavLink } from "react-router-dom"
 
 /* Project images import */
 
-import GreekPic from "../assets/greek-pic.png"
-import ScenePic from "../assets/scene-pic.png"
-import EatthefrogPic from "../assets/eatthefrog-pic.png"
+import SpringPic from "../../assets/projects/spring/springplaceholder.png"
+import GreekPic from "../../assets/projects/greekapi/greek-pic.png"
+import ScenePic from "../../assets/projects/sceneit/scene-pic.png"
+import EatthefrogPic from "../../assets/projects/eatthefrog/eatthefrog-pic.png"
 
 /* Tech icons import */
 
-import Vscode from "../assets/icons/tech-icons/vscode.png"
-import Github from "../assets/icons/tech-icons/github.png"
+import Vscode from "../../assets/icons/tech/vscode.png"
+import Github from "../../assets/icons/tech/github.png"
 
-import Html from "../assets/icons/tech-icons/html.png"
-import Css from "../assets/icons/tech-icons/css.png"
-import Js from "../assets/icons/tech-icons/js.png"
-import ReactIcon from "../assets/icons/tech-icons/react.png"
-import Python from "../assets/icons/tech-icons/python.png"
+import Html from "../../assets/icons/tech/html.png"
+import Css from "../../assets/icons/tech/css.png"
+import Js from "../../assets/icons/tech/js.png"
+import ReactIcon from "../../assets/icons/tech/react.png"
+import Python from "../../assets/icons/tech/python.png"
 
-import Nodejs from "../assets/icons/tech-icons/nodejs.png"
-import Fastapi from "../assets/icons/tech-icons/fastapi.png"
-import Postgresql from "../assets/icons/tech-icons/Postgresql.png"
+import Nodejs from "../../assets/icons/tech/nodejs.png"
+import Fastapi from "../../assets/icons/tech/fastapi.png"
+import Postgresql from "../../assets/icons/tech/Postgresql.png"
 
 function Work() {
   return (
@@ -28,7 +29,7 @@ function Work() {
       {/* <p className="projects-keywords">Key words: APIs, etc etc etc</p> */}
       <div className="project-box">
         <div className="chrome-box-project">
-          <div className="project-pic"></div>
+          <img className="work__project-pic" src={SpringPic}/>
           <div className="work__project-description__title">Spring</div>
           <div className="work__project-description"><b>A fullstack habit tracker web app</b> which allows users to set themselves intentions, and earn trophies when they set and complete challenges.
           </div>

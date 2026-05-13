@@ -1,22 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from './Pages/Home'
-import Work from './Pages/Work'
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
+import Home from "./pages/toppages/home";
+import Work from "./pages/toppages/work";
+import About from "./pages/toppages/about";
+import Contact from "./pages/toppages/contact";
 
-import Spring from "./Pages/ProjectPages/Spring";
-import GrecianDB from "./Pages/ProjectPages/GrecianDB"
-import SceneIt from "./Pages/ProjectPages/SceneIt"
-import EatTheFrog from "./Pages/ProjectPages/EatTheFrog"
-import Principles from "./Pages/ProjectPages/Principles"
+import Spring from "./pages/projectpages/spring";
+import GrecianDB from "./pages/projectpages/greciandb";
+import SceneIt from "./pages/projectpages/sceneIt";
+import EatTheFrog from "./pages/projectpages/eatthefrog";
+import Principles from "./pages/projectpages/principles";
 
-import ChromeBox from './assets/chromeboxfargreengimp.png'
-import Header from './Header/Header'
-import NavBar from "./Header/NavBar";
-import Footer from "./components/Footer";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
-import './App.css'
+import "./css/app.css"
+import "./css/pages.css"
 
 function App() {
 
@@ -24,7 +23,7 @@ function App() {
     <>
       
       <Router  basename="/portfolio">
-        <NavBar/>
+        <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />

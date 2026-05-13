@@ -1,212 +1,3 @@
-/* .chrome-box {
-  margin-top: 100px;
-  width: 500px;
-  height: 140px;
-} */
-
-/* to put in header css*/
-
-* {
-  box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
-}
-
-.Header {
-  width: 100%;
-
-}
-
-.Header__blue-bar {
-  width: 100%;
-  height: 30px;
-  background-color: #B5F4FF;
-  box-shadow: 0px 6px 6px #b5f4ff;
-}
-
-.Header__grid-split {
-  margin: 30px 50px 40px 50px ;
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-}
-
-.Header__grid-split-left {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-
-.Header__grid-split-left__top {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.Header__grid-split-left__top-tab {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 250px;
-  background-color: #a7a7a7;
-  margin-bottom: 6px;
-  border-radius: 12px;
-  z-index: 0;
-  padding: 20px;
-}
-
-.Header__grid-split-left__top-white {
-  height: 100%;
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-
-
-.Header__grid-split-left__bottom {
-  background-color: #a7a7a7;
-  margin-top: 20px;
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.Header__grid-split-left__bottom-white {
-  height: 100%;
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.Header__grid-split-right {
-  margin-left: 20px;
-  background-color: #a7a7a7;
-  height: 170px;
-  border-radius: 12px;
-  display: flex;
-  padding: 20px;
-}
-
-.Header__grid-split-right-white {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  border-radius: 8px;
-  position: relative;
-  z-index: 0;
-}
-
-/* Nav Bar */
-
-.timebar {
-  position: absolute;
-  width: 120%;
-  padding: 10px;
-  font-size: 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  right: 0px;
-}
-
-.navbar {
-  /* position: absolute;  */
-  width: 100%;
-  bottom: 0px;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 40px;
-
-  background-color: rgba(255, 255, 255, 0.788);
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.navbar__name {
-  font-size: 3rem;
-}
-
-.navbar__nav-links {
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.nav-link {
-  font-size: 1.4rem;
-  text-decoration: none;
-  color: #01c6e9;
-}
-
-.nav-link:hover {
-  transform: scale(1.1);
-}
-
-/* footer */
-
-.footer {
-  background-color: #FFB56B;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer__thanks {
-  padding: 40px;
-}
-
-.footer__pages {
-  padding: 40px;
-}
-
-.footer__nav-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__contact {
-  padding: 40px;
-}
-
-.footer__socials-box {
-  display: flex;
-}
-
-.footer__social-link {
-
-  border-radius: 10px;
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-}
-
-.footer__social-link:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-@media (max-width: 900px) {
-  .footer {
-  background-color: #FFB56B;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-  }
-    .footer > :first-child {
-    grid-column: 1 / 3;
-  }
-
-  .navbar__nav-links {
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  
-
-  }
-}
-
-/* ------Home------- */
-
 /* --------INTRO-------- */
 
 
@@ -230,15 +21,12 @@
 }
 
 .chrome-box-outer {
-  background-color: #a7a7a759;
-  border-top: solid 4px #f1f1f1;
-  border-left: solid 4px #f0f0f0;
-  border-right: solid 4px #7c7c7c;
-  border-bottom: solid 4px #7c7c7c;
-  border-radius: 44px;
+  background-color: #9aedfc;
+  border-radius: 38px;
   display: flex;
-  padding: 8px;
+  /* padding: 4px; */
   margin: 20px;
+  box-shadow: 3px 3px 5px rgb(110, 110, 110);
 }
 
 .intro-box {
@@ -248,10 +36,6 @@
 .chrome-box-inner {
   background-color: #fffffffa;
   padding: 20px 20px 34px 20px;
-  border-top: solid 4px #7c7c7c;
-  border-left: solid 4px #7c7c7c;
-  border-right: solid 4px #f7f7f7;
-  border-bottom: solid 4px #e0e0e0;
   font-size: 1.3rem;
   width: 100%;
   border-radius: 36px;
@@ -288,7 +72,7 @@
   height: 300px;
   margin: auto;
   border-radius: 520px;
-  background-color: #99d4c1;
+  background-color: #d2fcff;
   display: none;
 }
 
@@ -304,13 +88,6 @@
   border-radius: 16px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.418);
 }
-
-/* .communication-box {
-  margin: auto;
-  width: 74%;
-  margin-top: 60px;
-  margin-bottom: 60px;
-} */
 
 h3 {
   margin: 0;
@@ -350,11 +127,8 @@ h3 {
 }
 
 .creative-box {
-  /* width: 74%;
-  margin-left: 50px;
-  margin-top: 60px; */
   margin-bottom: 80px;
-} 
+}
 
 @media (max-width: 900px) {
   .comm-icon {
@@ -427,7 +201,6 @@ h3 {
 
 .chrome-box-project {
   margin: 30px;
-  /* aspect-ratio: 2/1; */
   background-color: rgba(255, 255, 255, 0.699);
   border-radius: 20px;
   overflow: hidden;
@@ -522,13 +295,6 @@ h3 {
   display: inline-block;
 }
 
-/* .work__project-title {
-  position: absolute;
-  top: 4px;
-  left: 10px;
-  font-size: 4rem;
-} */
-
 .work__project-explore {
   position: absolute;
   bottom: 16px;
@@ -601,13 +367,13 @@ h3 {
 /* ----about ----- */
 
 .about-title {
-  padding: 0px 50px;
+  padding: 0px 20px;
   font-size: 3rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about-description {
-  padding: 0px 50px;
+  padding: 0px 20px;
   font-size: 1.2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -618,22 +384,15 @@ h3 {
 }
 
 .about__artist {
-  margin: 30px 60px;
+  margin: 30px 20px;
 }
 
 .about__painting-grid {
-  /* display: flex;
-  justify-content: space-around; */
+
   display: flex;
   margin: 40px 70px;
   overflow:auto
 }
-
-/* .painting {
-  width: 26%;
-  aspect-ratio: 1/1;
-  background-color: #ffffff;
-} */
 
 .painting-img {
   height: 300px;
@@ -652,13 +411,13 @@ h3 {
   height: 100%;
   width: 300px;
   object-fit: cover;
-  
+
 }
 
 
 
 .about-personal {
-  padding: 0px 50px;
+  padding: 0px 20px;
   font-size: 1.2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -669,7 +428,21 @@ h3 {
   height: 200px;
 }
 
+@media (min-width: 900px) {
+  .about-title, .about-description {
+    padding: 0px 50px;
+  }
 
+  .about__artist {
+  margin: 30px 60px;
+  }
+
+  .about-personal {
+  padding: 0px 50px;
+  }
+
+  
+}
 
 
 /* ---contact -----*/
@@ -687,7 +460,7 @@ h3 {
 }
 
 .contact-page-box {
-  margin: 40px;
+  margin: 20px;
 }
 
 .label {
@@ -731,6 +504,12 @@ h3 {
 
   .contact__social-link {
     height: 90px;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact-page-box {
+    margin: 40px;
   }
 }
 
