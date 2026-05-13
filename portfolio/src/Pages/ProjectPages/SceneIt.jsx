@@ -28,6 +28,9 @@ function SceneIt() {
       <div>
         <div></div>
       </div>
+      <div className="github-project-link">
+        <a className="github-link-button" href="https://github.com/simonholt256/sceneit" target="_blank">See project on GitHub</a>
+      </div>
       <div className="project-links">
         <NavLink to="/work/spring" className="project-link">
           Spring

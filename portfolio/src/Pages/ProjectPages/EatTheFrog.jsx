@@ -39,6 +39,9 @@ function EatTheFrog() {
         ways to approach their tasks and choose what works for them.</div>
       <div className="explore-title">Key Words</div>
       <div className="explore-text">Advanced html and css for user input, caching, local storage, Algorithms for sorting tasks</div>
+      <div className="github-project-link">
+        <a className="github-link-button" href="https://github.com/simonholt256/EatTheFrog" target="_blank">See project on GitHub</a>
+      </div>
       <div className="project-links">
         <NavLink to="/work/spring" className="project-link">
           Spring

@@ -27,6 +27,9 @@ function GrecianDB() {
       <div className="explore-text"></div> */}
       <div className="explore-title">Key Words</div>
       <div className="explore-text">API Requests, Database management, schemas, models, routers, Error handling</div>
+      <div className="github-project-link">
+        <a className="github-link-button" href="https://github.com/simonholt256/GreekMyth" target="_blank">See project on GitHub</a>
+      </div>
       <div className="project-links">
         <NavLink to="/work/spring" className="project-link">
           Spring
