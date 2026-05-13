@@ -7,6 +7,8 @@ import Chat from "../../assets/icons/indicators/chat.png"
 import Idea from "../../assets/icons/indicators/idea.png"
 import Setting from "../../assets/icons/indicators/setting.png"
 
+import { motion } from "framer-motion";
+
 function Home() {
   return (
     <>
@@ -39,7 +41,13 @@ function Home() {
       <div className="key-principles-text">
         There are a few key principles I think are vital for a project to reach its best form. Communication. Maintainability. Creativity.
       </div>
-      <div className="chrome-box-outer communication-box">
+      <motion.div
+        className='chrome-box-outer intro-box'
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="chrome-box-inner">
           <h3>Communication</h3>
           <div className="communication-box__text-icon-split">
@@ -54,9 +62,15 @@ function Home() {
           </div>
           
         </div>
-      </div>
+      </motion.div>
       <div className="blue-divider-home"></div>
-      <div className="chrome-box-outer maintain-box">
+      <motion.div
+        className='chrome-box-outer intro-box'
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="chrome-box-inner">
           <h3>Maintainability</h3>
           <div className="maintain-box__text-icon-split">
@@ -70,9 +84,15 @@ function Home() {
           </div>
           
         </div>
-      </div>
+      </motion.div>
       <div className="yellow-divider-home"></div>
-      <div className="chrome-box-outer creative-box">
+      <motion.div
+        className='chrome-box-outer intro-box'
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="chrome-box-inner">
           <h3>Creativity</h3>
           <div className="creative-box__text-icon-split">
@@ -86,7 +106,7 @@ function Home() {
           </div>
           
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
