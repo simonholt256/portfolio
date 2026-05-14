@@ -1,80 +1,153 @@
+/* home */
+
 /* --------INTRO-------- */
 
-
-.tech-divider-home {
-  height: 40px;
-  background-color: #FFFAC2;
-  padding: 6px 16px;
-  margin-left: 4%;
-  margin-right: 30%;
-  margin-top: 40px;
-  font-size: 1.4rem;
-  box-shadow: 0px 6px 6px #FFFAC2;
-  position: relative;
-}
-
-.tech-divider-home__text {
-  position: absolute;
-  top: -4px;
-  font-weight: 700;
-  font-size: 1.6rem;
-}
-
-.chrome-box-outer {
-  background-color: #9aedfc;
-  border-radius: 38px;
-  display: flex;
-  /* padding: 4px; */
-  margin: 20px;
-  box-shadow: 3px 3px 5px rgb(110, 110, 110);
-}
-
 .intro-box {
-  margin: 70px 40% 60px 80px;
-}
-
-.chrome-box-inner {
-  background-color: #fffffffa;
-  padding: 20px 20px 34px 20px;
-  font-size: 1.3rem;
-  width: 100%;
-  border-radius: 36px;
-
-}
-
-.chrome-pic {
-  width: 600px;
-
-}
-
-.orange-divider-home {
-  width: 100%;
-  background-color: #FFB56B;
-  height: 26px;
-  position: relative;
-  box-shadow: 0px 6px 6px #FFB56B;
-
-}
-
-.guy-pic {
-  height: 500px;
-  position: absolute;
-  right: 40px;
-  bottom: 26px;
-
-}
-
-.pic-small-box {
   width: 100%;
   display: flex;
+  margin: auto;
+  /* border: solid 1px black; */
+  margin-bottom: 40px;
+  padding: 0px 40px;
+  max-width: 1200px;
+  background-color: #59a6ff15;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px #59a6ff33;
 }
 
-.profile-pic-small {
-  height: 300px;
+.intro-title-box {
+  margin: 40px;
+  /* border-right: solid 26px #ffde4a;
+  border-left: solid 26px #ffde4a; */
+  height: 40px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.orange-border {
+  position: absolute;
+  border-bottom: solid 30px #f8a6ff;
+  border-left: solid 30px #f8a6ff;
+  border-radius: 0px 50px;
+  height: 240px;
+  width: 110%;
+  top: 0px;
+  left: -70px;
+}
+
+.intro-text-box {
+  margin: 40px;
+  margin-left: 110px;
+  margin-top: 80px;
+  position: relative;
+  font-size: var(--font-size-medium);
+  
+}
+
+.yellow-pattern {
+  background-image: url("../assets/design/yellow-wallpaper.jpg");
+  background-size: cover;
+  height: 360px;
+  width: 290px;
+  margin: 40px;
+  margin-left: 0px;
+  border: solid 20px #59a6ff;
+  border-radius: 40px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.profile-pic {
+  height: 360px;
+  border: solid 20px #95c7ff;
+  border-radius: 40px;
+  position: absolute;
+  top: -20px;
+  left: -22px;
+  background-color: #fff69594;
+  box-shadow: 5px 5px 5px rgb(148, 148, 148);
+}
+
+.divider-home {
+  width: 80%;
   margin: auto;
-  border-radius: 520px;
-  background-color: #d2fcff;
+  border-top: dashed 2px black;
+  position: relative;
+  
+}
+
+.phone-title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.phone-text {
+  margin: 0px 40px 20px 40px;
+  text-align: justify;
+}
+
+.phone-intro-box {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  .orange-border {
+    border-bottom: none;
+  }
+
+}
+
+@media (max-width: 960px) {
+  .intro-box {
+    display: none;
+  }
+
+  .tech-block {
+    display: none;
+  }
+
+  .phone-intro-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phone-profile-picture-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .yellow-pattern {
+    margin: 0px 0px 40px 0px;
+  }
+
+}
+
+/* view projects */
+
+.view-projects-box {
+  /* border: solid 1px black; */
+  margin-top: 40px;
+
+}
+
+.view-projects-display {
+  border: solid 6px rgb(48, 136, 252);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  border-radius: 60px;
+  background-color: #01c6e9;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.322);
+}
+
+.view-projects-button {
+  padding: 20px 40px;
+  border-radius: 40px;
+  font-size: var(--font-size-large);
 }
 
 
@@ -88,6 +161,22 @@
   background-color: #ffffff9d;
   border-radius: 16px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.418);
+}
+
+.principle-anchor-box {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-card {
+  border: solid 1px rgb(116, 116, 116);
+  margin: 20px;
+  padding: 14px 18px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(155, 155, 155);
 }
 
 h3 {
@@ -137,26 +226,19 @@ h3 {
     display: none;
   }
 
-  .intro-box {
-    margin: 14px;
-  }
 
   .guy-pic {
     height: 300px;
   }
 
-  .tech-divider-home__text {
-  display: none;
-  }
+
 
   .orange-divider-home {
   margin-top: 30px;
 
   }
 
-  .tech-divider-home {
-    display: none;
-  }
+  
 
   .key-principles-text {
     margin: 30px 20px;
