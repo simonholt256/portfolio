@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <>
-    <div className="tech-block">python etc</div>
+    {/* <div className="tech-block">python etc</div> */}
     <div className="intro-box">
       
       <div className="tech-info-box">
@@ -39,7 +39,7 @@ function Home() {
       </div>
     </div>
     <div className="phone-intro-box">
-      <div className="phone-tech-block">python etc</div>
+      {/* <div className="phone-tech-block">python etc</div> */}
       <div className="phone-title">Hi, I'm Simon,<br></br> what can I do for you?</div>
       <div className="phone-profile-picture-box">
         <div className="yellow-pattern">
