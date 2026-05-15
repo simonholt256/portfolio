@@ -1,4 +1,5 @@
 
+import { NavLink } from "react-router-dom"
 
 import Profilepic from "../../assets/profile/profilepicnobackground.png"
 import CommunicationIcon from "../../assets/icons/indicators/communication.png"
@@ -7,12 +8,45 @@ import Chat from "../../assets/icons/indicators/chat.png"
 import Idea from "../../assets/icons/indicators/idea.png"
 import Setting from "../../assets/icons/indicators/setting.png"
 
+import CreativeStock from "../../assets/design/creative-stock.png"
+
 import { motion } from "framer-motion";
 
 function Home() {
   return (
     <>
-    {/* <div className="tech-block">python etc</div> */}
+    <div className="tech-block-marquee">
+      <div className="tech-block-track">
+        <div className="tech-block-content">
+          <div className="marquee-item">React JS</div>
+          <div className="marquee-item">Python</div>
+          <div className="marquee-item">PostgreSQL</div>
+          <div className="marquee-item">HTML</div>
+          <div className="marquee-item">Fast API</div>
+          <div className="marquee-item">CSS</div>
+          <div className="marquee-item">React JS</div>
+          <div className="marquee-item">Python</div>
+          <div className="marquee-item">PostgreSQL</div>
+          <div className="marquee-item">HTML</div>
+          <div className="marquee-item">Fast API</div>
+          <div className="marquee-item">CSS</div>
+        </div>
+        <div className="tech-block-content">
+          <div className="marquee-item">React JS</div>
+          <div className="marquee-item">Python</div>
+          <div className="marquee-item">PostgreSQL</div>
+          <div className="marquee-item">HTML</div>
+          <div className="marquee-item">Fast API</div>
+          <div className="marquee-item">CSS</div>
+          <div className="marquee-item">React JS</div>
+          <div className="marquee-item">Python</div>
+          <div className="marquee-item">PostgreSQL</div>
+          <div className="marquee-item">HTML</div>
+          <div className="marquee-item">Fast API</div>
+          <div className="marquee-item">CSS</div>
+        </div>
+      </div>
+    </div> 
     <div className="intro-box">
       
       <div className="tech-info-box">
@@ -63,25 +97,27 @@ function Home() {
 
       <div className="view-projects-box">
         <div className="view-projects-display">
-          <button className="view-projects-button">View projects!</button>
+          <NavLink to="/work" className="view-projects-button">
+            View Projects
+          </NavLink>
         </div>
       </div>
       <div className="key-principles-text">
         There are a few key principles I think are vital for a project to reach its best form.
       </div>
       <div className="principle-anchor-box">
-        <div className="principle-anchor-box__item"><a>Commincation</a></div>
-        <div className="principle-anchor-box__item"><a>Maintainability</a></div>
-        <div className="principle-anchor-box__item"><a>Creativity</a></div>
+        <div className="principle-anchor-box__item"><a className="principle-anchor" href="#communication">Communication</a></div>
+        <div className="principle-anchor-box__item"><a className="principle-anchor" href="#maintainability">Maintainability</a></div>
+        <div className="principle-anchor-box__item"><a className="principle-anchor" href="#creativity">Creativity</a></div>
       </div>
       <motion.div
-        className='text-card'
-        initial={{ opacity: 0, y: 100 }}
+        className="text-card"
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.5, ease: "linear" }}
         viewport={{ once: true, amount: 0.2 }}
       >
-          <h3>Communication</h3>
+          <h3 id="communication">Communication</h3>
           <div className="communication-box__text-icon-split">
             <p>
               Communication amongst the team and communication with a client. In a work
@@ -91,17 +127,18 @@ function Home() {
               or break an initiative. 
             </p>
             <img className="comm-icon" src={Chat}></img>
+            
           </div>
       </motion.div>
       <div className="blue-divider-home"></div>
       <motion.div
-        className='text-card'
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
+        className="text-card"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "linear" }}
         viewport={{ once: true, amount: 0.2 }}
-      >  
-        <h3>Maintainability</h3>
+      >
+        <h3 id="maintainability">Maintainability</h3>
         <div className="maintain-box__text-icon-split">
           <p>
             Readable code that is understood at a glance, helps work done today and in the future.
@@ -114,13 +151,13 @@ function Home() {
       </motion.div>
       <div className="yellow-divider-home"></div>
       <motion.div
-        className='text-card'
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
+        className="text-card"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "linear" }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <h3>Creativity</h3>
+        <h3 id="creativity">Creativity</h3>
         <div className="creative-box__text-icon-split">
           <p>
             Creative thinking creates solutions. Whether that happens through tailoring an algorithm to
@@ -131,6 +168,7 @@ function Home() {
           <img className="comm-icon" src={Idea}></img>
         </div>
       </motion.div>
+      {/* <img className="creative-stock" src={CreativeStock}></img> */}
     </>
   )
 }

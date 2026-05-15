@@ -23,19 +23,21 @@ function App() {
     <>
       
       <Router  basename="/portfolio">
-        <Header/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/work/spring" element={<Spring />} />
-          <Route path="/work/greciandb" element={<GrecianDB />} />
-          <Route path="/work/sceneit" element={<SceneIt />} />
-          <Route path="/work/eatthefrog" element={<EatTheFrog />} />
-          <Route path="/work/principles" element={<Principles />} />
-        </Routes>
-        <Footer/>
+        <div className="whole-page">
+          <Header/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/work/spring" element={<Spring />} />
+            <Route path="/work/greciandb" element={<GrecianDB />} />
+            <Route path="/work/sceneit" element={<SceneIt />} />
+            <Route path="/work/eatthefrog" element={<EatTheFrog />} />
+            <Route path="/work/principles" element={<Principles />} />
+          </Routes>
+          <Footer/>
+        </div>
       </Router>
       {/* <img className='chrome-box' src={ChromeBox}/> */}
     </>

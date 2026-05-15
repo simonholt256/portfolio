@@ -26,6 +26,7 @@ function Work() {
   return (
     <>
       <h1 className="projects-title">Projects</h1>
+      <h2>Always Learning. Always growing. Always building</h2>
       {/* <p className="projects-keywords">Key words: APIs, etc etc etc</p> */}
       <div className="project-box">
         <div className="chrome-box-project">
